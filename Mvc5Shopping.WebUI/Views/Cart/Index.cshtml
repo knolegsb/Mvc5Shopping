@@ -1,7 +1,7 @@
 ﻿@model Mvc5Shopping.WebUI.Models.CartIndexViewModel
 
 @{
-    ViewBag.Title = "Sports Store : Your Cart";
+    ViewBag.Title = "MVC 5 Shopping : Your Cart";
 }
 
 <style>
@@ -49,4 +49,5 @@
 
 <div class="text-center">
     <a class="btn btn-primary" href="@Model.ReturnUrl">Continue Shopping</a>
+    @Html.ActionLink("Checkout now", "Checkout", null, new { @class = "btn btn-primary" })
 </div>
