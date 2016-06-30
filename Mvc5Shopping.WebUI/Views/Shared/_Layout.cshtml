@@ -18,9 +18,11 @@
                     <span class="icon-bar"></span>
                 </button>
                 @Html.ActionLink("MVC 5 Shopping", "List", "Product", new { area = "" }, new { @class = "navbar-brand" })
+                
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>@Html.Action("Summary", "Cart")</li>
                 </ul>
             </div>
         </div>
