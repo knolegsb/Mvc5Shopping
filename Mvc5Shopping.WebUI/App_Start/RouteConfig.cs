@@ -13,7 +13,7 @@ namespace Mvc5Shopping.WebUI
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.MapRoute(null, "", new { controller = "Product", Action = "List", category = (string)null, page = 1 });
+            routes.MapRoute(null, "", new { controller = "Product", action = "List", category = (string)null, page = 1 });
 
             routes.MapRoute(null, "Page{page}", new { controller = "Product", action = "List", category = (string)null }, new { page = @"\d+" });
 
@@ -21,7 +21,7 @@ namespace Mvc5Shopping.WebUI
 
             routes.MapRoute(null, "{category}/Page{page}", new { controller = "Product", action = "List" }, new { page = @"\d+" });
 
-            routes.MapRoute(null, "{category}/{action}");
+            routes.MapRoute(null, "{controller}/{action}");
 
             //routes.MapRoute(
             //    name: null,
