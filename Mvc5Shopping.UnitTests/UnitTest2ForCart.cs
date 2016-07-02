@@ -11,7 +11,7 @@ using Mvc5Shopping.WebUI.Models;
 namespace Mvc5Shopping.UnitTests
 {
     [TestClass]
-    public class UnitTest2
+    public class UnitTest2ForCart
     {
         [TestMethod]
         public void Can_Add_New_Lines()

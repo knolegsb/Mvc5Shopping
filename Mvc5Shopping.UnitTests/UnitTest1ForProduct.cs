@@ -13,7 +13,7 @@ using Mvc5Shopping.WebUI.HtmlHelpers;
 namespace Mvc5Shopping.UnitTests
 {
     [TestClass]
-    public class UnitTest1
+    public class UnitTest1ForProduct
     {
         //[TestMethod]
         //public void Can_Paginate()
@@ -232,6 +232,6 @@ namespace Mvc5Shopping.UnitTests
             Assert.AreEqual(res2, 2);
             Assert.AreEqual(res3, 1);
             Assert.AreEqual(resAll, 5);
-        }
+        }        
     }
 }
