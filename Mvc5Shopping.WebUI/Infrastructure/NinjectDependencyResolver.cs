@@ -2,6 +2,8 @@
 using Mvc5Shopping.Domain.Abstract;
 using Mvc5Shopping.Domain.Concrete;
 using Mvc5Shopping.Domain.Entities;
+using Mvc5Shopping.WebUI.Infrastructure.Abstract;
+using Mvc5Shopping.WebUI.Infrastructure.Concrete;
 using Ninject;
 using System;
 using System.Collections.Generic;
@@ -51,6 +53,7 @@ namespace Mvc5Shopping.WebUI.Infrastructure
             };
 
             kernel.Bind<IOrderProcessor>().To<EmailOrderProcessor>().WithConstructorArgument("settings", emailSettings);
+            kernel.Bind<IAuthProvider>().To<FormAuthProvider>();
         }
     }
 }
